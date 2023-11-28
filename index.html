@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    
+    <script src="index.js"></script>
+    <link rel="stylesheet" href="./css/main.css">
+    <script type="text/javascript" src="https://www.gstatic.com/charts/loader.js"></script>
+
+
+</head>
+<body>
+    <button class="shadow__btn" id="home">
+        <a id="enlace_home" href="index.html">Home</a>
+    </button>
+
+    <input type="text" name="text" class="input" id="input-busqueda" placeholder="Buscar...">
+
+    <button class="button boton" id="series">
+        <span class="button-content">Serie </span>
+    </button>
+    <button class="button boton" id="movie">
+        <span class="button-content">Peliculas </span>
+    </button>
+
+    <button class="button boton" id="informe">
+        <span class="button-content">Crear Informe </span>
+    </button>
+    <img src="./img/cerrar.png" alt="" id="cerrar-img">
+
+
+<div id="informes">
+    <h2 style="color:white; display: none;" id="h2">Peliculas mejor valoradas</h2>
+    <div id="info-peliculas"></div>
+    <div id="grafica-valoradas"></div>
+
+
+    <h2 style="color:white; display: none;">Peliculas con mayor recaudacion</h2>
+    <div id="info-recaudacion"></div>
+    <div id="grafica-recaudacion"></div>
+    
+    
+    <h2 style="color:white; display: none;">Peliculas más votadas</h2>
+    <div id="info-mas-votadas"></div>
+    <div id="grafica-mas-votadas"></div>
+    <div id="peliculas-container" class="grupo-imagenes"></div>
+
+</div>
+    
+    <div id="detalles-mensaje"></div>
+    <div class="loading-bar" id="cargando" style="display: none;">Loading</div>
+
+    <!-- Contenedor para la gráfica -->
+</body>
+</html>

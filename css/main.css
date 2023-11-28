@@ -1,0 +1,192 @@
+html{
+    background-color: black;
+}
+/* Agrega estas reglas CSS para los estilos */
+.grupo-peliculas {
+    display: flex; /* Hace que los elementos del grupo se muestren en una fila horizontal */
+}
+
+.pelicula {
+    margin-right: 10px; /* Ajusta el espacio entre las imágenes */
+    border: 1px solid white;
+    padding: 10px;
+    margin-top: 10px;
+}
+
+.pelicula img {
+    width: 100px; /* Establece el ancho deseado para todas las imágenes */
+    height: 150px; /* Establece la altura deseada para todas las imágenes */
+    object-fit: cover; /* Ajusta el contenido de la imagen para cubrir el contenedor manteniendo la proporción */
+    transition: transform 1s ease;
+}
+
+.detalles-mensaje{
+    margin-left: 700px;
+}
+#input-busqueda{
+    margin-left: 100px;
+}
+
+
+.pelicula img:hover{
+    transform: scale(1.1);
+}
+
+#cerrar{
+    position: fixed;
+    width: 50px;
+            height : 50px;
+            margin-top: -200px;
+            margin-left: 430px;
+        }
+
+        .loading-bar {
+            position: fixed;
+            width: 110px;
+            height: 110px;
+            background: transparent;
+            border: px solid #3c3c3c;
+            border-radius: 50%;
+            text-align: center;
+            line-height: 111px;
+            font-family: sans-serif;
+            font-size: 15px;
+            color: #ffffff;
+            letter-spacing: 3px;
+            text-transform: uppercase;
+            text-shadow: 0 0 20px #ffffff;
+            box-shadow: 0 0 20px rgba(0, 0, 0, 0.5);
+            left: 45%;
+            top: 80%;
+        }
+          
+          .loading-bar:before {
+            content: "";
+            position: absolute;
+            top: -3px;
+            left: -3px;
+            width: 100%;
+            height: 100%;
+            border: 3px solid transparent;
+            border-top: 5px solid #fff000;
+            border-right: 5px solid #fff000;
+            border-radius: 50%;
+            animation: animateC 2s linear infinite;
+          }
+          
+          @keyframes animateC {
+            0% {
+              transform: rotate(0deg);
+            }
+          
+            100% {
+              transform: rotate(360deg);
+            }
+          }
+          
+          @keyframes animate {
+            0% {
+              transform: rotate(45deg);
+            }
+          
+            100% {
+              transform: rotate(405deg);
+            }
+          }
+          
+
+          .shadow__btn {
+            padding: 10px 20px;
+            border: none;
+            font-size: 17px;
+            color: #fff;
+            border-radius: 7px;
+            letter-spacing: 4px;
+            font-weight: 700;
+            text-transform: uppercase;
+            transition: 0.5s;
+            transition-property: box-shadow;
+          }
+          
+          .shadow__btn {
+            background: rgb(0,140,255);
+            box-shadow: 0 0 25px rgb(0,140,255);
+          }
+          
+          .shadow__btn:hover {
+            box-shadow: 0 0 5px rgb(0,140,255),
+                        0 0 25px rgb(0,140,255),
+                        0 0 50px rgb(0,140,255),
+                        0 0 100px rgb(0,140,255);
+          }
+          .button {
+            position: relative;
+            overflow: hidden;
+            height: 3rem;
+            padding: 0 2rem;
+            border-radius: 1.5rem;
+            background: #000000;
+            background-size: 400%;
+            color: #fff;
+            border: none;
+          }
+          
+          .button:hover::before {
+            transform: scaleX(1);
+          }
+          
+          .button-content {
+            position: relative;
+            z-index: 1;
+          }
+          
+          .button::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            transform: scaleX(0);
+            transform-origin: 0 50%;
+            width: 100%;
+            height: inherit;
+            border-radius: inherit;
+            background: linear-gradient(
+              82.3deg,
+              rgba(150, 93, 233, 1) 10.8%,
+              rgba(99, 88, 238, 1) 94.3%
+            );
+            transition: all 0.475s;
+          }
+
+          .input {
+            font-family: -apple-system,BlinkMacSystemFont,"Segoe UI","Roboto","Oxygen","Ubuntu","Cantarell","Fira Sans","Droid Sans","Helvetica Neue",sans-serif;
+            font-weight: 500;
+            font-size: .8vw;
+            color: #fff;
+            background-color: rgb(28,28,30);
+            box-shadow: 0 0 .4vw rgba(0,0,0,0.5), 0 0 0 .15vw transparent;
+            border-radius: 0.4vw;
+            border: none;
+            outline: none;
+            padding: 0.4vw;
+            max-width: 190px;
+            transition: .4s;
+          }
+          
+          .input:hover {
+            box-shadow: 0 0 0 .15vw rgba(135, 207, 235, 0.186);
+          }
+          
+          .input:focus {
+            box-shadow: 0 0 0 .15vw skyblue;
+          }
+          #enlace_home{
+            text-decoration: none;
+            color: white;
+          }
+
+          #cerrar-img{
+            width: 20px;
+            margin-left: 45%;
+            display: none;
+          }
